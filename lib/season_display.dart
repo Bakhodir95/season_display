@@ -1,38 +1,58 @@
 library season_display;
 
+/// Represents the four seasons.
 enum Season {
+  /// The season of growth and renewal.
   Spring,
+
+  /// The season of warmth and sunlight.
   Summer,
+
+  /// The season of harvest and change.
   Fall,
+
+  /// The season of cold and dormancy.
   Winter,
 }
 
+/// Returns the name of the given [Season].
+///
+/// For example:
+/// ```dart
+/// print(getSeasonName(Season.Spring)); // 'Spring'
+/// ```
 String getSeasonName(Season season) {
   switch (season) {
     case Season.Spring:
-      return 'Bahor';
+      return 'Spring';
     case Season.Summer:
-      return 'Yoz';
+      return 'Summer';
     case Season.Fall:
-      return 'Kuz';
+      return 'Fall';
     case Season.Winter:
-      return 'Qish';
+      return 'Winter';
     default:
-      return 'Noma`lum';
+      return 'Unknown';
   }
 }
 
+/// Returns the color associated with the given [Season].
+///
+/// For example:
+/// ```dart
+/// print(getSeasonColor(Season.Spring)); // 'Green'
+/// ```
 String getSeasonColor(Season season) {
   switch (season) {
     case Season.Spring:
-      return 'Yashil';
+      return 'Green';
     case Season.Summer:
-      return 'Sariq';
+      return 'Yellow';
     case Season.Fall:
-      return 'To`q sariq';
+      return 'Orange';
     case Season.Winter:
-      return 'Ko`k';
+      return 'Blue';
     default:
-      return 'Rangi yo`q';
+      return 'No Color';
   }
 }
