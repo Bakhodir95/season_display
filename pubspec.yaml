@@ -1,0 +1,19 @@
+name: season_display
+description: "A new Flutter package project is  for providing seasons."
+version: 1.0.0
+homepage: https://github.com/Bakhodir95/create_package.git
+repository: https://github.com/Bakhodir95/create_package.git
+
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  test: ^1.25.2
+
+
